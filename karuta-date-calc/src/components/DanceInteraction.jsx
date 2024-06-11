@@ -42,7 +42,10 @@ const DanceInteraction = ({DanceAdd, DanceFoodAdd, DanceDrinkAdd, setFood, setDr
   }
 
   return (
-    <button className="button" onClick={Drink}>Dance</button>
+    <div className="buttonimg">
+      <img className="img" src="../src/images/dance.png"/>
+      <button className="button" onClick={Drink}>Dance</button>
+    </div>
   )
 }
 

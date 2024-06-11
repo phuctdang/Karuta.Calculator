@@ -38,7 +38,13 @@ const DrinkInteraction = ({DrinkAdd, setFood, setDrink, setActivity, setTime, Fo
   }
 
   return (
-    <button className="button" onClick={Drink}>Coffee/Juicebox</button>
+    <div className="buttonimg">
+      <div id="drinks">
+        <img id="coffee" className="img" src="../src/images/coffee.png"/>
+        <img className="img" src="../src/images/juicebox.png"/>
+      </div>
+      <button className="button" onClick={Drink}>Coffee/Juicebox</button>
+    </div>
   )
 }
 

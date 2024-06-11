@@ -40,7 +40,10 @@ const SandwichInteraction = ({SandwichFoodAdd, SandwichDrinkAdd, setFood, setDri
   }
 
   return (
-    <button className="button" onClick={Drink}>Sandwich</button>
+    <div className="buttonimg">
+      <img className="img" src="../src/images/sandwich.png"/>
+      <button className="button" onClick={Drink}>Sandwich</button>
+    </div>
   )
 }
 

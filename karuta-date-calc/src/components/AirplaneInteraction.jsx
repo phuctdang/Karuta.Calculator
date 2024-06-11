@@ -35,7 +35,10 @@ const AirplaneInteraction = ({AirplaneAdd, setFood, setDrink, setActivity, setTi
     setFood(FoodLimit);
   }
   return (
-    <button className="button" onClick={Airplane}>Airplane</button>
+    <div className="buttonimg">
+      <img className="img" src="../src/images/airplane.png"/>
+      <button className="button" onClick={Airplane}>Airplane</button>
+    </div>
   )
 }
 

@@ -42,7 +42,10 @@ const FerrisWheelInteraction = ({FerrisWheelAdd, FWFoodAdd, FWDrinkAdd, setFood,
   }
 
   return (
-    <button className="button" onClick={Drink}>Ferris Wheel</button>
+    <div className="buttonimg">
+      <img className="img" src="../src/images/ferriswheel.png"/>
+      <button className="button" onClick={Drink}>Ferris Wheel</button>
+    </div>
   )
 }
 

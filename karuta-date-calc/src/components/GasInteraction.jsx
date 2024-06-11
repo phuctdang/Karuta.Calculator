@@ -44,7 +44,10 @@ const GasInteraction = ({setGas, GasAdd, setFood, setDrink, setActivity, setTime
   }
 
   return (
-    <button className="button" onClick={Gas}>Gas</button>
+    <div className="buttonimg">
+      <img className="img" src="../src/images/gas.png"/>
+      <button className="button" onClick={Gas}>Gas</button>
+    </div>
   )
 }
 

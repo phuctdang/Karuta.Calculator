@@ -37,7 +37,10 @@ const MasksInteraction = ({MasksAdd, setFood, setDrink, setActivity, setTime, Fo
     setTime(TimeLimit); 
   }
   return (
-    <button className="button" onClick={Masks}>Masks</button>
+    <div className='buttonimg'>
+      <img className="img" src="../src/images/masks.png"/>
+      <button className="button" onClick={Masks}>Masks</button>
+    </div>
   )
 }
 

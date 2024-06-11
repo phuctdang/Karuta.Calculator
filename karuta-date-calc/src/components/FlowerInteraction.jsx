@@ -37,7 +37,10 @@ const FlowerInteraction = ({FlowerAdd, setFood, setDrink, setActivity, setTime, 
     setFood(FoodLimit);
   }
   return (
-    <button className="button" onClick={Flower}>Flower</button>
+    <div className="buttonimg">
+      <img className="img" src="../src/images/flower.png"/>
+      <button className="button" onClick={Flower}>Flower</button>
+    </div>
   )
 }
 

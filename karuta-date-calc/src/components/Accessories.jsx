@@ -37,8 +37,14 @@ const Accessories = ({setFood, setDrink, setActivity, setTime, FoodCalc, DrinkCa
 
   return (
     <>
-      <button className="button" onClick={Resource}>Ring</button>
-      <button className="button" onClick={Resource}>Shopping Bags</button>
+      <div className="buttonimg">
+        <img className="img" src="../src/images/ring.png"/>
+        <button className="button" onClick={Resource}>Ring</button>
+      </div>
+      <div className="buttonimg">
+        <img className="img" src="../src/images/shoppingbags.png"/>
+        <button className="button" onClick={Resource}>Shopping Bags</button>
+      </div>
     </>
   )
 }

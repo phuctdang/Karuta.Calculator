@@ -38,7 +38,13 @@ const FoodInteraction = ({FoodAdd, setFood, setDrink, setActivity, setTime, Drin
   }
 
   return (
-    <button className="button" onClick={Food}>Tacos/Pasta</button>
+    <div className="buttonimg">
+      <div id="foods">
+        <img id="taco" className="img" src="../src/images/taco.png"/>
+        <img id="pasta" className="img" src="../src/images/pasta.png"/>
+      </div>
+      <button className="button" onClick={Food}>Taco/Pasta</button>
+    </div>
   )
 }
 
