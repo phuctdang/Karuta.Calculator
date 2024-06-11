@@ -1,4 +1,5 @@
 import './App.css'
+import { Routes, Route } from 'react-router-dom';
 import DatingCalc from './components/DatingCalc';
 
 function App() { 
@@ -13,7 +14,9 @@ function App() {
           <p2 id="price">FOR A LOW LOW PRICE OF ONLY 100k gems or 5 easy installments of 20k gems, your crush is guarantee to fall head over heels for you!!! </p2>
         </div>
 
-        <DatingCalc />
+        <Routes>
+          <Route path='/' element={<DatingCalc />} />
+        </Routes>
       </div>
   )
 }
