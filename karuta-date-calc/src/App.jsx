@@ -1,12 +1,9 @@
 import './App.css'
-import { Routes, Route } from 'react-router-dom';
-
 import DatingCalc from './components/DatingCalc';
 
 function App() { 
 
   return (
-    <Routes>
       <div id="body">
         <div id="message">
           <p1>Welcome lovers!</p1>
@@ -15,10 +12,9 @@ function App() {
           <p2>Using the world's most advanced and powerful AI, this super calculator will guide you through every step of your date to ensure a successful outcome.</p2>
           <p2 id="price">FOR A LOW LOW PRICE OF ONLY 100k gems or 5 easy installments of 20k gems, your crush is guarantee to fall head over heels for you!!! </p2>
         </div>
-        
-        <Route path='/' element={<DatingCalc />} />
+
+        <DatingCalc />
       </div>
-    </Routes>
   )
 }
 
