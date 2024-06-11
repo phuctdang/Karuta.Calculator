@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import './App.css'
+import { Routes, Route } from 'react-router-dom';
 
 import DatingCalc from './components/DatingCalc';
 
@@ -14,8 +14,9 @@ function App() {
         <p2>Using the world's most advanced and powerful AI, this super calculator will guide you through every step of your date to ensure a successful outcome.</p2>
         <p2 id="price">FOR A LOW LOW PRICE OF ONLY 100k gems or 5 easy installments of 20k gems, your crush is guarantee to fall head over heels for you!!! </p2>
       </div>
-
-      <DatingCalc />
+    <Routes>
+      <Route path='/' element={<DatingCalc />} />
+    </Routes>
     </div>
   )
 }
