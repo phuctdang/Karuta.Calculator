@@ -6,7 +6,7 @@ const FlowerInteraction = ({FlowerAdd, setFood, setDrink, setActivity, setTime, 
     } else if (FlowerAdd >= 100) {
       setActivity(100 - 8)
     }
-    return FlowerAdd;
+    return FlowerAdd - 8;
   }
 
   const DrinkLimit = () => {

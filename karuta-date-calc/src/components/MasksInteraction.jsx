@@ -6,7 +6,7 @@ const MasksInteraction = ({MasksAdd, setFood, setDrink, setActivity, setTime, Fo
     } else if (MasksAdd >= 100) {
       setActivity(100 - 8)
     }
-    return MasksAdd;
+    return MasksAdd - 8;
   }
 
   const DrinkLimit = () => {
@@ -31,10 +31,10 @@ const MasksInteraction = ({MasksAdd, setFood, setDrink, setActivity, setTime, Fo
   }
 
   const Masks = () => {
+    setTime(TimeLimit); 
     setActivity(MasksLimit); 
     setDrink(DrinkLimit); 
     setFood(FoodLimit);
-    setTime(TimeLimit); 
   }
   return (
     <div className='buttonimg'>

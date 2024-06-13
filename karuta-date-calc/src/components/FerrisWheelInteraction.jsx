@@ -6,7 +6,7 @@ const FerrisWheelInteraction = ({FerrisWheelAdd, FWFoodAdd, FWDrinkAdd, setFood,
     } else if (FerrisWheelAdd >= 100) {
       setActivity(100 - 8)
     }
-    return FerrisWheelAdd;
+    return FerrisWheelAdd - 8;
   }
 
   const FWFoodLimit = () => {
@@ -15,7 +15,7 @@ const FerrisWheelInteraction = ({FerrisWheelAdd, FWFoodAdd, FWDrinkAdd, setFood,
     } else if (FWFoodAdd >= 100) {
       setFood(100 - 4)
     }
-    return FWFoodAdd;
+    return FWFoodAdd - 4;
   }
 
   const FWDrinkLimit = () => {
@@ -24,7 +24,7 @@ const FerrisWheelInteraction = ({FerrisWheelAdd, FWFoodAdd, FWDrinkAdd, setFood,
     } else if (FWDrinkAdd >= 100) {
       setDrink(100 - 6)
     }
-    return FWDrinkAdd;
+    return FWDrinkAdd - 6;
   }
 
   const TimeLimit = () => {

@@ -11,6 +11,7 @@ import SandwichInteraction from './SandwichInteraction';
 import CocktailInteraction from './CocktailInteraction';
 import DanceInteraction from './DanceInteraction';
 import FerrisWheelInteraction from './FerrisWheelInteraction';
+import WinLose from './WinLose';
 
 const DatingCalc = () => {
   const [gas, setGas] = useState(100);
@@ -82,6 +83,8 @@ const DatingCalc = () => {
       <Movement setGas={setGas} setFood={setFood} setDrink={setDrink} setActivity={setActivity} setTime={setTime} GasCalc={GasCalc} FoodCalc={FoodCalc} DrinkCalc={DrinkCalc} ActivityCalc={ActivityCalc} TimeCalc={TimeCalc} />
 
       <button id="restart" onClick={refresh}>Restart</button>
+
+      <WinLose gas={gas} food={food} drink={drink} activity={activity} time={time} />
       
     </section>
   )

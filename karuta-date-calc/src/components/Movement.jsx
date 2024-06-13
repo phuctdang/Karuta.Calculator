@@ -40,7 +40,7 @@ const Movement = ({setGas, setFood, setDrink, setActivity, setTime, GasCalc, Foo
     setFood(FoodLimit);
     setDrink(DrinkLimit); 
     setActivity(ActivityLimit); 
-    setTime(TimeLimit); 
+    setTime(TimeLimit);
   }
 
   return (

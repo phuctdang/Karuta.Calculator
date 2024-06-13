@@ -6,7 +6,7 @@ const CocktailInteraction = ({CocktailDrinkAdd, CocktailActivityAdd, setFood, se
     } else if (CocktailDrinkAdd >= 100) {
       setDrink(100 - 6)
     }
-    return CocktailDrinkAdd;
+    return CocktailDrinkAdd - 6;
   }
 
   const CocktailActivityLimit = () => {
@@ -15,7 +15,7 @@ const CocktailInteraction = ({CocktailDrinkAdd, CocktailActivityAdd, setFood, se
     } else if (CocktailActivityAdd >= 100) {
       setActivity(100 - 8)
     }
-    return CocktailActivityAdd;
+    return CocktailActivityAdd - 8;
   }
 
   const FoodLimit = () => {

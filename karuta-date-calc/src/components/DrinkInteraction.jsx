@@ -6,7 +6,7 @@ const DrinkInteraction = ({DrinkAdd, setFood, setDrink, setActivity, setTime, Fo
     } else if (DrinkAdd >= 100) {
       setDrink(100 - 6)
     }
-    return DrinkAdd;
+    return DrinkAdd - 6;
   }
 
   const FoodLimit = () => {

@@ -59,6 +59,7 @@ p2 {
   flex-direction: row;
   margin: 10px;
   justify-content: space-evenly;
+  margin-bottom: 50px;
 }
 
 .button {
@@ -82,7 +83,7 @@ p2 {
   padding: 5px;
   font-weight: bold;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: large;
+  font-size: 25px;
   margin: auto;
   margin-top: 20px;
   border: solid 3px black;
@@ -150,4 +151,14 @@ p2 {
   width: 70px;
   height: 70px;
   margin-bottom: 0px;
+}
+
+#resultmsg {
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+  color: yellow;
+  text-shadow: 3px 3px 20px white;
+  align-items: center;
+  margin-top: 100px;
 }

@@ -6,7 +6,7 @@ const SandwichInteraction = ({SandwichFoodAdd, SandwichDrinkAdd, setFood, setDri
     } else if (SandwichFoodAdd >= 100) {
       setFood(100-4)
     }
-    return SandwichFoodAdd;
+    return SandwichFoodAdd - 4;
   }
 
   const SandwichDrinkLimit = () => {
@@ -15,7 +15,7 @@ const SandwichInteraction = ({SandwichFoodAdd, SandwichDrinkAdd, setFood, setDri
     } else if (SandwichDrinkAdd >= 100) {
       setDrink(100 - 6)
     }
-    return SandwichDrinkAdd;
+    return SandwichDrinkAdd - 6;
   }
 
   const ActivityLimit = () => {

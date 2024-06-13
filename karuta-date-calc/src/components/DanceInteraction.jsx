@@ -6,7 +6,7 @@ const DanceInteraction = ({DanceAdd, DanceFoodAdd, DanceDrinkAdd, setFood, setDr
     } else if (DanceAdd >= 100) {
       setActivity(100 - 8)
     }
-    return DanceAdd;
+    return DanceAdd - 8;
   }
 
   const DanceFoodLimit = () => {
@@ -15,7 +15,7 @@ const DanceInteraction = ({DanceAdd, DanceFoodAdd, DanceDrinkAdd, setFood, setDr
     } else if (DanceFoodAdd >= 100) {
       setFood(100 - 4)
     }
-    return DanceFoodAdd;
+    return DanceFoodAdd - 4;
   }
 
   const DanceDrinkLimit = () => {
@@ -24,7 +24,7 @@ const DanceInteraction = ({DanceAdd, DanceFoodAdd, DanceDrinkAdd, setFood, setDr
     } else if (DanceDrinkAdd >= 100) {
       setDrink(100 - 6)
     }
-    return DanceDrinkAdd;
+    return DanceDrinkAdd - 6;
   }
 
   const TimeLimit = () => {
